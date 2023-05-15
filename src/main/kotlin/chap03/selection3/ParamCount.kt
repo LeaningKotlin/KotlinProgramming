@@ -12,6 +12,7 @@ fun main() {
 
     // 매개변수가 두 개 있는 람다식 함수
     moreParam { a, b -> "Hello World! $a $b" }  // 매개변수명 생략 불가
+    moreParam { _, b -> "Hello World! $b" }     // 첫 번째 문자열은 사용하지 않고 생략
 }
 
 // 매개변수가 없는 람다식 함수가 noParam 함수의 매개변수 out 으로 지정되
